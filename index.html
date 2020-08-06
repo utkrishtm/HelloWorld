@@ -1,14 +1,188 @@
-<html> 
-    <head> 
-        <title>My first site!</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<!doctype html>
+<html lang="en">
 
-    <body>
-        <h1 class="hey">Welcome to my page</h1>
-        <h2>Made by: Utkrisht </h2>
-        <h3></h3>
-        
-    </body>
-    
-</html> <!--// hyper text markup language -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light" style="background-color: lightgray;">
+            <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+
+    <div class="parent">
+        <div class="box1">
+            <h2>About Us</h2>
+            <br>
+            <p>We are a group of college students working together on creating different website for various
+                Constructions Companies.</p>
+        </div>
+        <div class="box2">
+            <h2>Updates</h2>
+            <br>
+            <p>We are currently working for Avios Company who are designing a futuristic mall design.</p>
+            <ul>
+                <li>Created the base code </li>
+                <li>Created the grids to display information</li>
+                <li>Added few images as parallex</li>
+                <li>Created a sign up bar for users to sign up and recieve information</li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h2>Projects</h2>
+            <br>
+            <p>Here are few companies we are working with.</p>
+            <ul>
+                <li>Avios Constructions</li>
+                <li>Gray Constructions</li>
+                <li>Apple Constructions</li>
+            </ul>
+        </div>
+        <div class="box4">
+            <h2>Sign Up</h2>
+            <div class="form-group" style="margin-left: 15px; margin-right: 300px;">
+                <br>
+                <p style="color: black; margin: 0px;">Please input your email address to recieve email updates and
+                    notifications
+                    about
+                    the current and future projects</p>
+                <br>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="name@example.com">
+                <small id="emailHelp" class="form-text ">We'll never share your email with anyone
+                    else.</small>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <div class="box5">
+            <!--Section: Contact v.2-->
+            <section class="mb-4">
+
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4 margin">Contact Us</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5 margin">Do you have any questions? Please do not
+                    hesitate to
+                    contact us directly. Our team will come back to you within
+                    a matter of hours to help you.</p>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5 margin">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control"
+                                            placeholder="John Appleseed">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control"
+                                            placeholder="name@example.com">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left button">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center button">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>Cary, NC 27519, USA</p>
+                            </li>
+
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+1 (123) 456-7890</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>contact@website.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </section>
+            <!--Section: Contact v.2-->
+        </div>
+    </div>
+
+
+
+
+    <script src="client.js"></script>
+
+</body>
+
+</html>

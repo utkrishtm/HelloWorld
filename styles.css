@@ -1,4 +1,71 @@
-.hey {
-    color: aqua;
-    text-align: center;
+body {
+    background-color: ;
+    color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 380px;
+    grid-template-areas:
+        "box1 box2 box3"
+        "box4 box4 box4"
+        "box5 box5 box5";
+}
+
+p {
+    margin: 15px;
+}
+
+h2 {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.box1 {
+    background-image: url("pic-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    grid-area: box1;
+}
+
+.box2 {
+    background-image: url("pic-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    grid-area: box2;
+}
+
+.box3 {
+    background-image: url("pic-5.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    grid-area: box3;
+}
+
+.box4 {
+    background-image: url("pic-4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    grid-area: box4;
+}
+
+.box5 {
+    background-image: url("pic-3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    grid-area: box5;
+}
+
+.margin {
+    margin: 15px;
+}
+
+.button {
+    color: white;
 }
